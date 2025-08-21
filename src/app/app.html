@@ -1,0 +1,59 @@
+<main class="main">
+  <div class="content">
+  @if (filteredProducts().length > 0) {
+  <table>
+    <tr>
+      <th>Naam</th>
+      <th>Prijs</th>
+      <th>Voorraad</th>
+    </tr>
+    @for(product of filteredProducts(); track product.productId) {
+      @if (product.stock <1) {
+          <tr style="background-color: red;">
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.stock}}</td>
+          </tr>
+      } @else {
+          <tr>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.stock}}</td>
+          </tr>
+      }
+    }
+  </table>
+  } @else {
+      <p>Loading products...</p>
+    }
+  </div>
+  <div class="content">
+  @if (allProducts().length > 0) {
+  <table>
+    <tr>
+      <th>Naam</th>
+      <th>Prijs</th>
+      <th>Voorraad</th>
+    </tr>
+    @for(product of allProducts(); track product.productId) {
+      @if (product.stock <1) {
+          <tr style="background-color: red;">
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.stock}}</td>
+          </tr>
+      } @else {
+          <tr>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.stock}}</td>
+          </tr>
+      }
+    }
+  </table>
+  } @else {
+      <p>Loading products...</p>
+    }
+  </div>
+</main>
+<router-outlet />
