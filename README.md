@@ -4,8 +4,8 @@
 
 Make sure you have the following installed:
 
-- [Node.js](https://nodejs.org/) (LTS version recommended)
-- [Angular CLI](https://angular.io/cli) globally installed:
+- [Node.js](https://nodejs.org/)
+- [Angular CLI](https://angular.io/cli)
   ```bash
   npm install -g @angular/cli
 
@@ -16,3 +16,4 @@ Use the following commands:
   cd Front-end-Solvisoft-assesment
   npm install
   ng serve
+
