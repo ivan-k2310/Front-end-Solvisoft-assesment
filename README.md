@@ -1,6 +1,6 @@
 # Front-end-Solvisoft-assesment
 
-This project is the Front-end for an assesment. It's made with angular and its main purpose is to call the end-points from the api (https://github.com/ivan-k2310/SolvisoftAPI). When you run the application it shows you 2 tables with data in it both tables contains data from the api: one where it's filtered and the other everything from the table "Products". It also calls another end-point that fetches all the data, parses it to json and sents it to another end-point. That can be seen in the console or in the logs of the back-end.
+This project is the Front-end for an assesment. It's made with angular and its main purpose is to call the end-points from the api (https://github.com/ivan-k2310/SolvisoftAPI). When you run the application it shows you 2 tables with data in it both tables contains data from the api: one where it's filtered and the other everything from the table "Products". It also calls another end-point that fetches all the data, parses it to json and sents it to another end-point. That can be seen in the console or in the logs of the back-end. Make sure the ports are the same that get logged in the back-end if not change them in /src/app/App.ts in the fetch functions.
 
 
 
